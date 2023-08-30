@@ -1,6 +1,6 @@
 # Project Workflow: Converting Questions from PDF to Database
 
-This document outlines the process of converting questions from a PDF format to a database using various tools and scripts.
+This document outlines the pipeline of converting questions from a PDF to JSON to database using Streamlit app and Python scripts.
 
 ## Steps
 
@@ -8,7 +8,7 @@ This document outlines the process of converting questions from a PDF format to 
 - Start by saving the set of questions in PDF format.
 
 ### Step 2: Use Tabula Tool
-- Upload the saved PDF to the Tabula tool, which will assist in extracting data from PDF files.
+- Upload the saved PDF to the [Tabula tool](https://tabula.technology), which will assist in extracting data from PDF files.
 
 ### Step 3: Select Questions for JSON
 - In Tabula, select the specific questions that you want to include in the JSON dataset.
@@ -17,7 +17,8 @@ This document outlines the process of converting questions from a PDF format to 
 - Export the selected questions from Tabula in JSON format.
 
 ### Step 5: Run JSON to Excel Code (streamlit.py)
-- Execute the "pdf.py" script to convert the JSON data to an Excel spreadsheet for easier manipulation.
+- Execute the "streamlit.py" script to convert the JSON data to an Excel spreadsheet for easier manipulation.
+- Alternatively, you can use [json2table.streamlit.app](https://json2table.streamlit.app).
 
 ### Step 6: Verify Excel Data
 - Review the Excel spreadsheet to ensure that the data has been accurately extracted.
